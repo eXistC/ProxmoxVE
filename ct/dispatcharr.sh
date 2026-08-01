@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 export SCRIPTS_URL="https://raw.githubusercontent.com/eXistC/ProxmoxVE/test/dispatcharr-fork"
-source <(curl -fsSL https://raw.githubusercontent.com/eXistC/ProxmoxVE/test/dispatcharr-fork/misc/build.func)
+source <(curl -fsSL "${SCRIPTS_URL}/misc/build.func")
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: ekke85 | MickLesk
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
@@ -208,6 +208,8 @@ EOF
   fi
   exit
 }
+
+bash -c "$(curl -fsSL "https://raw.githubusercontent.com/eXistC/ProxmoxVE/test/dispatcharr-fork/ct/dispatcharr.sh?v=$(date +%s)")"
 
 start
 build_container
