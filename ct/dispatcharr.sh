@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-export SCRIPTS_URL="https://raw.githubusercontent.com/eXistC/ProxmoxVE/fix/dispatcharr-celery-queues"
-source <(curl -fsSL https://raw.githubusercontent.com/eXistC/ProxmoxVE/fix/dispatcharr-celery-queues/misc/build.func)
+export SCRIPTS_URL="https://raw.githubusercontent.com/eXistC/ProxmoxVE/test/dispatcharr-fork"
+source <(curl -fsSL https://raw.githubusercontent.com/eXistC/ProxmoxVE/test/dispatcharr-fork/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: ekke85 | MickLesk
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
